@@ -1,6 +1,6 @@
 ---
 slug: 2024-01-01-hello-world
-title: ほっとするソーシャルネットワーク『Mewst』をリリースしました
+title: Test
 authors: [shimbaco]
 tags: [announcement]
 ---
