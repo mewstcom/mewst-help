@@ -16,7 +16,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'mewsted', // Usually your GitHub org/user name.
-  projectName: 'mewst', // Usually your repo name.
+  projectName: 'mewst-help', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
