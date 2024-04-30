@@ -5,4 +5,4 @@ authors: [shimbaco]
 tags: [announcement]
 ---
 
-よろしくお願いします
+よろしくお願いします〜
