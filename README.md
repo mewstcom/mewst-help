@@ -1,11 +1,16 @@
 # mewst-help
 
-## 開発
+## セットアップ
 
 ```
-yarn
-yarn start -p 3303
+git clone git@github.com:mewstcom/mewst-help.git
+cd mewst-help
+docker compose up
+docker compose exec app yarn
+docker compose exec app yarn start -h 0.0.0.0
 ```
+
+http://localhost:3303/ にアクセスするとページが表示されるはずです。
 
 ## デプロイ
 

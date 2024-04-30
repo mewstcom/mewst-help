@@ -1,0 +1,11 @@
+FROM node:20.12.2-bookworm-slim
+
+RUN \
+  apt update && \
+  apt dist-upgrade -yq && \
+  apt install -y --no-install-recommends \
+    build-essential
+
+WORKDIR /app
+
+CMD ["bash"]

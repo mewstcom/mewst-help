@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    environment:
+      BINDING: 0.0.0.0
+    ports:
+      - "3303:3000"
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
