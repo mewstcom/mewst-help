@@ -1,20 +1,13 @@
-# Dependencies
-/node_modules
-
-# Production
-/build
-
-# Generated files
-.docusaurus
-.cache-loader
-
-# Misc
 .DS_Store
-.env.local
+.cache-loader
+.docusaurus
 .env.development.local
-.env.test.local
+.env.local
 .env.production.local
-
+.env.test.local
+.idea
+/build
+/node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
