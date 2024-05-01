@@ -14,6 +14,6 @@ http://localhost:3303/ にアクセスするとページが表示されるはず
 
 ## デプロイ
 
-```
-GIT_USER=shimbaco USE_SSH=true yarn deploy
-```
+`prod` ブランチにマージするとデプロイされます。
+
+https://github.com/mewstcom/mewst-help/compare/prod...main
