@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'ヘルプセンター',
-  tagline: '',
+  title: 'Mewstヘルプ',
+  tagline: 'Mewstの使い方や更新情報などを掲載しています',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -15,7 +15,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'mewsted', // Usually your GitHub org/user name.
+  organizationName: 'mewstcom', // Usually your GitHub org/user name.
   projectName: 'mewst-help', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -26,7 +26,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ja',
-    locales: ['ja', 'en'],
+    locales: ['ja'],
   },
 
   presets: [
@@ -38,14 +38,25 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/mewsted/mewst-help/tree/main',
+            'https://github.com/mewstcom/mewst-help/tree/main',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/mewsted/mewst-help/tree/main',
+          editUrl: 'https://github.com/mewstcom/mewst-help/tree/main',
+          feedOptions: {
+            type: 'atom',
+            copyright: `Copyright © ${new Date().getFullYear()} Mewst`,
+            createFeedItems: async (params) => {
+              const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+              return defaultCreateFeedItems({
+                // keep only the 10 most recent blog posts in the feed
+                blogPosts: blogPosts.filter((item, index) => index < 10),
+                ...rest,
+              });
+            },
+          },
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -56,26 +67,24 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/og-image.png',
     navbar: {
-      title: 'Mewst',
+      title: 'ヘルプ',
       logo: {
-        alt: 'Mewst Logo',
+        alt: 'Mewst',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
           label: 'ドキュメント',
+          position: 'left',
+          to: '/docs'
         },
-        {to: '/blog', label: 'ブログ', position: 'left'},
-        // {
-        //   href: 'https://github.com/mewsted/mewst',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        {
+          label: 'ブログ',
+          position: 'left',
+          to: '/blog'
+        },
       ],
     },
     footer: {
@@ -99,7 +108,7 @@ const config: Config = {
           items: [
             {
               label: 'Mewst',
-              href: 'https://mewst.com/@Mewst',
+              href: 'https://mewst.com/@mewst',
             },
             {
               label: 'Discord',
@@ -116,7 +125,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/mewsted/mewst',
+              href: 'https://github.com/mewstcom/mewst',
             },
           ],
         },
