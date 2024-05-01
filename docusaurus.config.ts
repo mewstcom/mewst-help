@@ -44,8 +44,19 @@ const config: Config = {
           showReadingTime: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/mewstcom/mewst-help/tree/main',
+          editUrl: 'https://github.com/mewstcom/mewst-help/tree/main',
+          feedOptions: {
+            type: 'atom',
+            copyright: `Copyright © ${new Date().getFullYear()} Mewst`,
+            createFeedItems: async (params) => {
+              const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+              return defaultCreateFeedItems({
+                // keep only the 10 most recent blog posts in the feed
+                blogPosts: blogPosts.filter((item, index) => index < 10),
+                ...rest,
+              });
+            },
+          },
         },
         theme: {
           customCss: './src/css/custom.css',
