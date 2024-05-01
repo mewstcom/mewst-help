@@ -36,11 +36,15 @@ Gravatarのアバター画像を使用するときはMewstに登録したとき�
 
 ## サービス {#service}
 
+### Mewstは誰が運営していますか？ {#creator}
+
+[shimbaco](https://shimba.co)が個人で運営しています。
+
 ### Mewstはどのように読みますか？ {#pronunciation}
 
 「ミュースト」と読みます。
 
-### 今後の開発予定はどこかで見れますか？ {#roadmap}
+### 今後の開発予定はどこかで見られますか？ {#roadmap}
 
 開発予定はGitHub Projectsで公開しています。
 
