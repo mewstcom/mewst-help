@@ -10,3 +10,6 @@ Mewstに関することは以下のサービスで発信しています。
 - [Bluesky](https://bsky.app/profile/mewst.com)
 - [Discord](https://discord.gg/tNwVpJ4Jfk)
 - [Threads](https://www.threads.net/@mewstcom)
+
+また、Mewstはオープンソースプロジェクトです。<br />
+[GitHubリポジトリ](https://github.com/mewstcom/mewst)でソースコードを見たり、開発に参加することができます。
