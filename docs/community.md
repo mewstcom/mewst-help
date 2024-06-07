@@ -11,5 +11,7 @@ Mewstに関することは以下のサービスで発信しています。
 - [Discord](https://discord.gg/tNwVpJ4Jfk)
 - [Threads](https://www.threads.net/@mewstcom)
 
+Threadsではフェディバースでのシェアを有効にしているため、Mastodonなどからもフォローできます。
+
 また、Mewstはオープンソースプロジェクトです。<br />
 [GitHubリポジトリ](https://github.com/mewstcom/mewst)でソースコードを見たり、開発に参加することができます。
